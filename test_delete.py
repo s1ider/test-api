@@ -22,5 +22,5 @@ class TestDeleteIssue(BaseAPITest):
     def test_delete_unexisted_issue(self):
         issue_id = 'labuda'
         r = requests.delete(self.url + issue_id, cookies=self.cookies)
-        self.assertEquals(r.status_code, 403)
+        self.assertEquals(r.status_code, 404)
 
