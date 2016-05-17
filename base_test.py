@@ -21,9 +21,9 @@ class BaseAPITest(unittest.TestCase):
     def create_issue(self):
         url = self.base_url + '/issue/'
         params = {
-            'project': 'API',
-            'summary': 'Test summary from robots',
-            'description': 'Hail the robots'
+            'project': 'VITALIY',
+            'summary': 'TEST DESCRIPTION',
+            'description': 'TESTTESTTESTTEST'
         }
         r = requests.put(url, data=params, cookies=self.cookies)
         self.assertEquals(r.status_code, 201)
